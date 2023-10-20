@@ -1,19 +1,28 @@
-# Machine Learning API using FastAPI
+# Sepsis Risk Prediction
 Develop a Machine Learning API (Application Programming Interface) using FastAPI.
 
 [![python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 [![MIT licensed](https://img.shields.io/badge/license-mit-blue?style=for-the-badge&logo=appveyor)](./LICENSE)
-![Python](https://img.shields.io/badge/python-3.9-blue.svg)
+![Python](https://img.shields.io/badge/python-3.10-blue.svg)
+![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white%29)
 
 ## Introduction
 
-In this project, we create an API that might be requested to interact with a ML model. This is an interesting solution when you want to keep your model architecture secret or to make your model available to users already having an API.
+Welcome to the Sepsis Risk Prediction project! This repository hosts an application powered by FastAPI and scikit-learn that predicts the probability of a patient having sepsis based on their vital signs and medical data.
 
 ![API illustration](https://lh3.googleusercontent.com/-qVJ4ZsbjsmH6CnYbojsAR4ImyHV8yxsFVinunH-pX7VCapGvufcXiPak6YVKIrj9ZdiCHwK5UFtQW8yuU5t83pz6fbqN1F2p74OWuT5dObCPnTBuCYr_P1mUg8arbP0WuEt7j_A)
 
 **Source** : *The benefits of Machine Learning APIs - UbiOps*
 
+## Project Overview
+In the healthcare industry, early detection of sepsis can be a matter of life and death. This project aims to provide a tool that can assist healthcare professionals in identifying patients at risk of sepsis by analyzing their vital signs and other medical data. The project combines the power of machine learning and a user-friendly web interface to streamline the prediction process.
 
+## Key Features
+- **Predictive Model**: Utilizes a pre-trained machine learning model to predict the likelihood of sepsis based on patient data.
+- **FastAPI Web Interface**: Provides a user-friendly web interface to input patient data and receive predictions.
+- **Confidence Scoring**: Calculates a confidence score for predictions, aiding in the decision-making process.
+- **Easy Deployment**: You can easily deploy this application in a Docker container for practical use in healthcare settings.
 
 ## Setup
 
@@ -40,48 +49,29 @@ The both long command-lines have a same structure, they pipe multiple commands u
 
 ## Run FastAPI
 
-- Run the demo apps (being at the repository root):
+- Run the apps (being at the repository root):
         
   FastAPI:
     
-    - Demo
+    
 
-          uvicorn src.demo_01.api:app --reload 
-
-    <!-- - Salary prediction
-
-          uvicorn src.salary.api:app --reload  -->
+          uvicorn src.main:app --reload 
 
 
-  - Go to your browser at the following address, to explore the api's documentation :
+
+
+  - Go to your browser at the following address, to explore the api's documentation and try out the API :
         
       http://127.0.0.1:8000/docs
 
 
-<!-- ## Screenshots
+## Screenshots
 
-<table>
-    <tr>
-        <th>FastAPI</th>
-        <th>FastAPI</th>
-    </tr>
-    <tr>
-        <td><img src="./screenshots/.png"/></td>
-        <td><img src="./screenshots/.png"/></td>
-    </tr>
-</table> -->
+_API Interface_
+![API Interface](/Images/API%20interface.jpg)
 
-
-## Resources
-Here are some resources you would read to have a good understanding of FastAPI :
-- [Tutorial - User Guide](https://fastapi.tiangolo.com/tutorial/)
-- [Video - Building a Machine Learning API in 15 Minutes ](https://youtu.be/C82lT9cWQiA)
-- [FastAPI for Machine Learning: Live coding an ML web application](https://www.youtube.com/watch?v=_BZGtifh_gw)
-- [Video - Deploy ML models with FastAPI, Docker, and Heroku ](https://www.youtube.com/watch?v=h5wLuVDr0oc)
-- [FastAPI Tutorial Series](https://www.youtube.com/watch?v=tKL6wEqbyNs&list=PLShTCj6cbon9gK9AbDSxZbas1F6b6C_Mx)
-- [Http status codes](https://www.linkedin.com/feed/update/urn:li:activity:7017027658400063488?utm_source=share&utm_medium=member_desktop)
-
-
+_Execution Interface_
+![Execution Interface](/Images/execution%20.jpg)
 
 
 
@@ -92,5 +82,5 @@ Feel free to make a PR or report an issue 😃.
 Oh, one more thing, please do not forget to put a description when you make your PR 🙂.
 
 ## Author
-
+![Twitter Follow](https://img.shields.io/twitter/follow/the1_caly)
 
