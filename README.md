@@ -77,9 +77,9 @@ _Execution Interface_
 
 ## Contributing
 
-Feel free to make a PR or report an issue 😃.
+This repo is open for contributions. Feel free to make a Pull Request or report an issue 😃.
 
-Oh, one more thing, please do not forget to put a description when you make your PR 🙂.
+Please do not forget to put a description when you make your PR 🙂.
 
 ## Author
 ![Twitter Follow](https://img.shields.io/twitter/follow/the1_caly)
