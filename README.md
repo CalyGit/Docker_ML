@@ -11,9 +11,9 @@ Develop a Machine Learning API (Application Programming Interface) using FastAPI
 
 Welcome to the Sepsis Risk Prediction project! This repository hosts an application powered by FastAPI ,scikit-learn and Docker that predicts the probability of a patient having sepsis based on their vital signs and medical data.
 
-![API illustration](https://lh3.googleusercontent.com/-qVJ4ZsbjsmH6CnYbojsAR4ImyHV8yxsFVinunH-pX7VCapGvufcXiPak6YVKIrj9ZdiCHwK5UFtQW8yuU5t83pz6fbqN1F2p74OWuT5dObCPnTBuCYr_P1mUg8arbP0WuEt7j_A)
+![API illustration](/Images/API%20interface.jpg)
 
-**Source** : *The benefits of Machine Learning APIs - UbiOps*
+**Image** : *Sepsis Prediction api - screenshot*
 
 ## Project Overview
 In the healthcare industry, early detection of sepsis can be a matter of life and death. This project aims to provide a tool that can assist healthcare professionals in identifying patients at risk of sepsis by analyzing their vital signs and other medical data. The project combines the power of machine learning and a user-friendly web interface to streamline the prediction process.
@@ -85,7 +85,12 @@ To deploy your Dockerized FASTAPI app on Hugging Face Spaces, follow these steps
 3. Wait as Hugging Face Spaces builds your app automatically after you have uploaded the files.
 4. Access your deployed app using the provided URL.
 
-For detailed instructions on deploying your app on Hugging Face Spaces, refer to the [Hugging Face Spaces Documentation](https://huggingface.co/docs/spaces).
+Congratulations! You have successfully deployed your app on Hugging Face Spaces.
+
+## Deployed App 
+Check out this [example](https://calistus-sepsis-prediction-app.hf.space/docs) of a deployed app on Hugging Face Spaces.
+
+
 ## Screenshots
 
 _API Interface_
@@ -102,6 +107,8 @@ This repo is open for contributions. Feel free to make a Pull Request or report 
 
 Please do not forget to put a description when you make your PR 🙂.
 
+## Medium Article
+[![Calistus Saratuki Medium](https://github-readme-medium.vercel.app/?username=@calistussaratuki)](https://calistussaratuki.medium.com/sepsis-prediction-api-with-fastapi-and-docker-f92148d58c55)
 ## Author
 ![Twitter Follow](https://img.shields.io/twitter/follow/the1_caly)
 
