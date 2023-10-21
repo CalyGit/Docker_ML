@@ -9,7 +9,7 @@ Develop a Machine Learning API (Application Programming Interface) using FastAPI
 
 ## Introduction
 
-Welcome to the Sepsis Risk Prediction project! This repository hosts an application powered by FastAPI and scikit-learn that predicts the probability of a patient having sepsis based on their vital signs and medical data.
+Welcome to the Sepsis Risk Prediction project! This repository hosts an application powered by FastAPI ,scikit-learn and Docker that predicts the probability of a patient having sepsis based on their vital signs and medical data.
 
 ![API illustration](https://lh3.googleusercontent.com/-qVJ4ZsbjsmH6CnYbojsAR4ImyHV8yxsFVinunH-pX7VCapGvufcXiPak6YVKIrj9ZdiCHwK5UFtQW8yuU5t83pz6fbqN1F2p74OWuT5dObCPnTBuCYr_P1mUg8arbP0WuEt7j_A)
 
@@ -49,7 +49,7 @@ The both long command-lines have a same structure, they pipe multiple commands u
 
 ## Run FastAPI
 
-- Run the apps (being at the repository root):
+- Run the app (being at the repository root):
         
   FastAPI:
     
@@ -64,7 +64,28 @@ The both long command-lines have a same structure, they pipe multiple commands u
         
       http://127.0.0.1:8000/docs
 
+## Run Dockerized app
 
+To run the Dockerized FASTAPI application, follow these steps:
+
+1. Build the Docker image from the project's root directory:
+    ```
+    docker build -t sepsis-prediction-app .
+    ```
+
+2. Run the Docker container:
+    ```
+    docker run -p 7860:7860 sepsis-prediction-app
+    ```
+## Deploying Your App on Hugging Face Spaces
+To deploy your Dockerized FASTAPI app on Hugging Face Spaces, follow these steps:
+
+1. Create a new Space in your Hugging Face Spaces account.
+2. Upload your files(Dockerfile, main.py, requirements.txt, pipeline.pkl).
+3. Wait as Hugging Face Spaces builds your app automatically after you have uploaded the files.
+4. Access your deployed app using the provided URL.
+
+For detailed instructions on deploying your app on Hugging Face Spaces, refer to the [Hugging Face Spaces Documentation](https://huggingface.co/docs/spaces).
 ## Screenshots
 
 _API Interface_
